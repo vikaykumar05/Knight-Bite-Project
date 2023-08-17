@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1{
+            display: inline;
+        }
+        .appbar {
+    zoom: .8;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background: rgba(0,0,0,.12);
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin: 0 100px;
+    width: 150px;
+    height: 90px;
+    background: url(https://nrzl4apc.knight-bite.com/main/res/brand-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 150px 90px;
+    cursor: pointer;
+}
+input#nav-icon {
+    display: none;
+}
+.nav {
+    margin-left: auto;
+    margin-right: 100px;
+    transition: all .5s;
+}
+.nav li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    list-style-position: inside;
+}
+.selected {
+    position: relative;
+    color: #fff!important;
+    cursor: default;
+    font-size: 22px;
+    font-weight: 700!important;
+}
+.link {
+    transition: all .5s;
+}
+.indicator {
+    margin: 5px auto;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    background: #c77bf4;
+}
+.app-link {
+    width: 100%;
+    height: 100vh;
+    background: url(https://nrzl4apc.knight-bite.com/main/res/index/app-link-background.svg);
+    background-size: cover;
+    text-align: center;
+}
+.app-link>h3 {
+    color: #fff;
+    font-family: nicotineregular;
+    padding-top: 40vh;
+    font-size: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all .4s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.buttons-container {
+    margin: 60px 0;
+    justify-content: center;
+}
+.ios-store {
+    width: 203px;
+    height: 68px;
+    background: url(https://nrzl4apc.knight-bite.com/main/res/index/ios-store.svg);
+    background-repeat: no-repeat;
+    transform: scale(1);
+}
+.ios-store, .android-store {
+    transition: all .5s;
+    margin: 0 30px;
+    animation-fill-mode: forwards;
+}
+.android-store {
+    width: 182.7px;
+    height: 70px;
+    background: url(https://nrzl4apc.knight-bite.com/main/res/index/google-play-badge.svg);
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+}
+.ios-store, .android-store {
+    transition: all .5s;
+    margin: 0 30px;
+    animation-fill-mode: forwards;
+}
+.pink-btn {
+    background: #FF5672;
+    padding: 10px 20px;
+    width: 195px;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+    </style>
+</head>
+<body>
+    <div class="appbar">
+        <div class="logo">
+        </div>
+        <nav class="nav">
+            <ul>
+            <li class="link selected">Home
+            <div class="indicator"></div>
+            </li>
+            <a href="#">
+            <li class="link">About
+            </li>
+            </a>
+            <a href="#">
+            <li class="link">Menu</li>
+            </a>
+            <a href="#">
+            <li class="link">Franchise</li>
+            </a>
+            
+            <li>
+            <button class="download-btn" onclick="window.location='http:\/\/bit.ly/KnightBite'">Download
+            App</button>
+            </li>
+            </ul>
+        </nav>
+            <div class="nav-icon">
+                <label for="nav-icon">
+                <div class="icon"></div>
+                </label>
+                </div>
+                </div>
+                <div class="content">
+                    <div class="app-link">
+                    <h3>order late night meals</h3>
+                    <div class="buttons-container">
+                    <a href="https://order.knight-bite.com" target="_blank" class="apply-link" style="margin-bottom: 25px">
+                    <button class="pink-btn">
+                    Order Now
+                    </button></a>
+                    <h3 style="color:white; font-weight: 600;margin:10px 0">
+                    Or
+                    </h3>
+                    <div class="stores-container">
+                    <a href="https://apps.apple.com/in/app/knight-bite-food-delivery-app/id1387840512">
+                    <div class="ios-store"></div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.axndxsoftwarehub.knightbite&amp;hl=en">
+                    <div class="android-store"> </div>
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+</body>
+</html>
